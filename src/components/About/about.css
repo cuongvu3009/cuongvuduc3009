@@ -1,0 +1,45 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(31, 29, 29);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-item {
+  margin: 20px;
+  color: white;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+  gap: 15px;
+}
+
+.about-icons {
+  display: flex;
+  gap: 20px;
+  color: rgb(229, 229, 160);
+}
+
+.about-icon:hover {
+  cursor: pointer;
+  animation: next 3s infinite ease;
+}
+
+@keyframes next {
+  0% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
