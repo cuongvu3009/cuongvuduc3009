@@ -57,7 +57,7 @@
 .c-form {
   display: flex;
   flex-direction: column;
-  min-width: 45vw;
+  min-width: 30vw;
   justify-content: center;
   align-items: center;
 }
@@ -69,12 +69,13 @@ form {
 }
 
 input {
-  width: 50%;
+  width: 100%;
   height: 50px;
   border: none;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  color: white;
 }
 
 textarea {
@@ -92,6 +93,12 @@ button {
   color: white;
   font-weight: 500;
   cursor: pointer;
+}
+
+.contact-feedback {
+  color: green;
+  font-weight: bold;
+  margin: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -121,10 +128,9 @@ button {
   }
 
   input {
-    width: 90%;
+    width: 98%;
     height: 40px;
     margin: 10px;
-    margin-left: 0;
   }
 
   button {

@@ -6,12 +6,26 @@ const ProjectList = () => {
   return (
     <div className='pl'>
       <div className='pl-texts'>
-        <h1 className='pl-title'>My project</h1>
-        <p className='pl-desc'>Find more in my github repo</p>
+        <h1 className='pl-title'>My projects</h1>
+        <p className='pl-desc'>
+          Find more at my{' '}
+          <a
+            href='https://github.com/cuongvu3009'
+            target='_blank'
+            rel='noreferrer'
+          >
+            github repo
+          </a>{' '}
+        </p>
       </div>
       <div className='pl-list'>
         {products.map((item) => (
-          <Project key={item.id} img={item.img} link={item.link} />
+          <Project
+            key={item.id}
+            img={item.img}
+            demo={item.demo}
+            repo={item.repo}
+          />
         ))}
       </div>
     </div>

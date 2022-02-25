@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className='about-container'>
       <h1 className='about-item'>About Me</h1>
-      <p className='about-item'>I have built stuffs with those technologies</p>
+      <p className='about-item'>I have built stuffs with these technologies</p>
       <div className='about-item'>
         <div className='icons-container'>
           <h2>Front-end</h2>
