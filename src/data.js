@@ -2,6 +2,7 @@ import blog from './img/blog.png';
 import hackernews from './img/hackernews.png';
 import recipes from './img/recipes.png';
 import searchCoctails from './img/searchCoctails.png';
+import chatDemo from './img/chatDemo.png';
 export const products = [
   {
     id: 1,
@@ -11,9 +12,9 @@ export const products = [
   },
   {
     id: 2,
-    img: 'https://www.w3schools.com/w3css/img_lights.jpg',
-    demo: 'https://github-paginition.netlify.app/',
-    repo: 'http://lama.dev',
+    img: chatDemo,
+    demo: 'https://chat-app-3009.netlify.app/',
+    repo: 'https://github.com/cuongvu3009/chatApp',
   },
   {
     id: 3,
