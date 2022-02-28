@@ -3,6 +3,7 @@ import hackernews from './img/hackernews.png';
 import recipes from './img/recipes.png';
 import searchCoctails from './img/searchCoctails.png';
 import chatDemo from './img/chatDemo.png';
+import realEstate from './img/realEstateImg.png';
 export const products = [
   {
     id: 1,
@@ -36,8 +37,8 @@ export const products = [
   },
   {
     id: 6,
-    img: 'https://www.w3schools.com/w3css/img_lights.jpg',
-    demo: 'https://blog3009.netlify.app/',
-    repo: 'http://lama.dev',
+    img: realEstate,
+    demo: 'https://real-estate-3009.vercel.app/',
+    repo: 'https://github.com/cuongvu3009/real-estate',
   },
 ];
