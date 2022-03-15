@@ -4,6 +4,7 @@ import recipes from './img/recipes.png';
 import searchCoctails from './img/searchCoctails.png';
 import chatDemo from './img/chatDemo.png';
 import realEstate from './img/realEstateImg.png';
+import github from './img/github.png';
 export const products = [
   {
     id: 1,
@@ -40,5 +41,11 @@ export const products = [
     img: realEstate,
     demo: 'https://real-estate-3009.vercel.app/',
     repo: 'https://github.com/cuongvu3009/real-estate',
+  },
+  {
+    id: 7,
+    img: github,
+    demo: 'https://github-3009.netlify.app/',
+    repo: 'https://github.com/cuongvu3009/Github-3009',
   },
 ];
