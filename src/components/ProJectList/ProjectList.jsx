@@ -25,6 +25,9 @@ const ProjectList = () => {
             img={item.img}
             demo={item.demo}
             repo={item.repo}
+            tech={item.tech}
+            name={item.name}
+            desc={item.desc}
           />
         ))}
       </div>

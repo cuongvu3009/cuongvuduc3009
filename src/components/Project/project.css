@@ -9,10 +9,10 @@
 
 .p-browser {
   height: 12%;
-  background-color: rgb(243, 242, 242);
+  background-color: rgb(233, 212, 212);
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   position: sticky;
   z-index: 2;
 }
@@ -36,6 +36,26 @@
   transform: translateY(-40%);
 }
 
+.question-btn {
+  padding: 5px;
+  border-radius: 5px;
+  right: 5px;
+  top: 0;
+  position: absolute;
+}
+
+.links-group {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-info {
+  background-color: rgb(240, 232, 232);
+  padding: 30px;
+}
+
 @media screen and (max-width: 480px) {
   .p {
     width: 100%;
@@ -43,7 +63,7 @@
   }
 
   .p-browser {
-    height: 30%;
+    height: 35%;
   }
 
   .project-btn {
