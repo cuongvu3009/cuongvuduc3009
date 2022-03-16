@@ -53,7 +53,11 @@
 
 .project-info {
   background-color: rgb(240, 232, 232);
-  padding: 30px;
+  border: 2px solid #73ad21;
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  padding: 5px;
 }
 
 @media screen and (max-width: 480px) {
