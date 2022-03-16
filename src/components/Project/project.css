@@ -58,16 +58,17 @@
   top: 35px;
   width: 100%;
   padding: 5px;
+  font-size: 14.5px;
 }
 
 @media screen and (max-width: 480px) {
   .p {
     width: 100%;
-    height: 20vh;
+    height: 32vh;
   }
 
   .p-browser {
-    height: 35%;
+    height: 20%;
   }
 
   .project-btn {
