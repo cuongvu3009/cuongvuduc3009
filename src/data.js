@@ -5,6 +5,7 @@ import searchCoctails from './img/searchCoctails.png';
 import chatDemo from './img/chatDemo.png';
 import realEstate from './img/realEstateImg.png';
 import github from './img/github.png';
+import store from './img/store.png';
 export const products = [
   {
     id: 1,
@@ -21,7 +22,7 @@ export const products = [
     demo: 'https://chat-app-3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/chatApp',
     name: 'Chat App',
-    tech: 'React, ChatEngine, ',
+    tech: 'React, ChatEngine',
     desc: 'Simple Chat app using ChatEngine.io',
   },
   {
@@ -39,7 +40,7 @@ export const products = [
     demo: 'https://hackernews3009.netlify.app/',
     repo: 'http://github.com/cuongvu3009/hacker-news',
     name: 'Hacker news',
-    tech: 'React, redux',
+    tech: 'React, Redux',
     desc: 'Study redux by making a simple hacker news, which fetch api from https://hn.algolia.com/api/v1',
   },
   {
@@ -48,7 +49,7 @@ export const products = [
     demo: 'https://recipes3009.netlify.app/about',
     repo: 'http://github.com/cuongvu3009/simply-recipes',
     name: 'Simply Recipes',
-    tech: 'React, Gatsby',
+    tech: 'React, Gatsby, JS',
     desc: 'Gatsby website',
   },
   {
@@ -66,7 +67,16 @@ export const products = [
     demo: 'https://github-3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/Github-3009',
     name: 'Github finder',
-    tech: 'React, auth0, context API',
+    tech: 'React, auth0, Fusion Charts, Context API',
     desc: 'Search any github user profile at ease. This website includes authentication which powered by auth0. The api is provided by https://api.github.com',
+  },
+  {
+    id: 8,
+    img: store,
+    demo: 'https://store-3009.netlify.app/',
+    repo: 'https://github.com/cuongvu3009/store',
+    name: 'Ecommerce website',
+    tech: 'React, auth0, Stripe, Context API, netlify cli',
+    desc: 'Ecommerce website which utilize stripe for payment, and auth0 for authentication. The main skeleton of state management is backed by context api.',
   },
 ];

@@ -18,6 +18,7 @@ const ProjectList = () => {
           </a>{' '}
         </p>
       </div>
+
       <div className='pl-list'>
         {products.map((item) => (
           <Project
