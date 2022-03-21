@@ -79,7 +79,7 @@ export const products = [
     demo: 'https://store-3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/store',
     name: 'Ecommerce website',
-    tech: 'React, auth0, Stripe, Context API, netlify cli',
+    tech: 'React, auth0, Stripe, Context API, Netlify cli',
     desc: 'Ecommerce website which utilize stripe for payment, and auth0 for authentication. The main skeleton of state management is backed by context api.',
   },
   {
@@ -88,7 +88,7 @@ export const products = [
     demo: 'https://job-3009.herokuapp.com/',
     repo: 'https://github.com/cuongvu3009/jobify',
     name: 'Job website',
-    tech: 'React, JWT, Mongodb, Context API, heroku',
+    tech: 'React, JWT, Mongodb, Context API, Heroku, Node, Express',
     desc: 'Job search website with authentication, analysis dashboard, and add job features',
   },
   {
@@ -97,7 +97,7 @@ export const products = [
     demo: 'https://blog-3009.herokuapp.com/',
     repo: 'https://github.com/cuongvu3009/blog3009',
     name: 'Blog website',
-    tech: 'React, JWT, Mongodb, Context API, heroku',
+    tech: 'React, JWT, Mongodb, Context API, Heroku, Node, Express',
     desc: 'Blog website with authentication, and add blog',
   },
 ];
