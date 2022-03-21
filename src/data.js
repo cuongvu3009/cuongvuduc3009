@@ -6,6 +6,9 @@ import chatDemo from './img/chatDemo.png';
 import realEstate from './img/realEstateImg.png';
 import github from './img/github.png';
 import store from './img/store.png';
+import job from './img/job.png';
+import blogMega from './img/blogMega.png';
+
 export const products = [
   {
     id: 1,
@@ -78,5 +81,23 @@ export const products = [
     name: 'Ecommerce website',
     tech: 'React, auth0, Stripe, Context API, netlify cli',
     desc: 'Ecommerce website which utilize stripe for payment, and auth0 for authentication. The main skeleton of state management is backed by context api.',
+  },
+  {
+    id: 9,
+    img: job,
+    demo: 'https://job-3009.herokuapp.com/',
+    repo: 'https://github.com/cuongvu3009/jobify',
+    name: 'Job website',
+    tech: 'React, JWT, Mongodb, Context API, heroku',
+    desc: 'Job search website with authentication, analysis dashboard, and add job features',
+  },
+  {
+    id: 10,
+    img: blogMega,
+    demo: 'https://blog-3009.herokuapp.com/',
+    repo: 'https://github.com/cuongvu3009/blog3009',
+    name: 'Blog website',
+    tech: 'React, JWT, Mongodb, Context API, heroku',
+    desc: 'Blog website with authentication, and add blog',
   },
 ];
