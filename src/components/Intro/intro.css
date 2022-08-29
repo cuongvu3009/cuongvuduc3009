@@ -86,7 +86,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .container {
+  .intro-container {
     height: auto;
   }
 
