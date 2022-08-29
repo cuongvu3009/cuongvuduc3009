@@ -34,7 +34,7 @@ export const products = [
     demo: 'https://search-4-cocktails.netlify.app/',
     repo: 'https://github.com/cuongvu3009/ultimate-cocktails-db',
     name: 'Search Cocktails',
-    tech: 'React, context Api',
+    tech: 'React, Context Api',
     desc: 'Simple search cocktail app using https://www.thecocktaildb.com/ api, that fetch cocktails recipe bases on custom search',
   },
   {
@@ -99,5 +99,156 @@ export const products = [
     name: 'Blog website',
     tech: 'React, JWT, Mongodb, Context API, Heroku, Node, Express',
     desc: 'Blog website with authentication, and add blog',
+  },
+];
+
+export const stacks = [
+  {
+    title: 'react',
+    link: 'https://reactjs.org/',
+    img: 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg',
+    level: 'excellent',
+    class: 'FE',
+  },
+  {
+    title: 'redux',
+    link: 'https://redux.js.org',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
+    level: 'excellent',
+    class: 'FE',
+  },
+  {
+    title: 'tailwind',
+    link: 'https://tailwindcss.com/',
+    img: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+    level: 'excellent',
+    class: 'FE',
+  },
+  {
+    title: 'typescript',
+    link: 'https://www.typescriptlang.org/',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+    level: 'good',
+    class: 'FE',
+  },
+  {
+    title: 'angular',
+    link: 'https://angular.io/',
+    img: 'https://www.vectorlogo.zone/logos/angular/angular-icon.svg',
+    level: 'good',
+    class: 'FE',
+  },
+  {
+    title: 'graphql',
+    link: 'https://graphql.org/',
+    img: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
+    level: 'good',
+    class: 'FE',
+  },
+
+  {
+    title: 'nodejs',
+    link: 'https://nodejs.org',
+    img: 'https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg',
+    level: 'excellent',
+    class: 'BE',
+  },
+  {
+    title: 'expressjs',
+    link: 'https://expressjs.com/',
+    img: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png',
+    level: 'excellent',
+    class: 'BE',
+  },
+
+  {
+    title: 'django',
+    link: 'https://www.djangoproject.com/',
+    img: 'https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg',
+    level: 'good',
+    class: 'BE',
+  },
+  {
+    title: 'spring',
+    link: 'https://spring.io/projects/spring-boot',
+    img: 'https://www.vectorlogo.zone/logos/springio/springio-ar21.svg',
+    level: 'novice',
+    class: 'BE',
+  },
+  {
+    title: 'firebase',
+    link: 'https://firebase.google.com/',
+    img: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+    level: 'excellent',
+    class: 'BE',
+  },
+
+  {
+    title: 'postgresql',
+    link: 'https://www.postgresql.org/',
+    img: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-vertical.svg',
+    level: 'good',
+    class: 'DB',
+  },
+  {
+    title: 'mongodb',
+    link: 'https://www.mongodb.com/',
+    img: 'https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg',
+    level: 'excellent',
+    class: 'DB',
+  },
+  {
+    title: 'docker',
+    link: 'https://www.docker.com/',
+    img: 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg',
+    level: 'excellent',
+    class: 'Tool',
+  },
+  {
+    title: 'github',
+    link: 'https://git-scm.com/',
+    img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    level: 'excellent',
+    class: 'Tool',
+  },
+  {
+    title: 'heroku',
+    link: 'https://heroku.com',
+    img: 'https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg',
+    level: 'excellent',
+    class: 'Tool',
+  },
+  {
+    title: 'jestjs',
+    link: 'https://jestjs.io',
+    img: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
+    level: 'good',
+    class: 'Tool',
+  },
+  {
+    title: 'aws',
+    link: 'https://aws.amazon.com/',
+    img: 'https://www.vectorlogo.zone/logos/amazon_awslambda/amazon_awslambda-icon.svg',
+    level: 'excellent',
+    class: 'Tool',
+  },
+];
+
+export const githubStats = [
+  {
+    title: 'activity',
+    img: 'https://activity-graph.herokuapp.com/graph?username=cuongvu3009&bg_color=ffff&color=000&line=0891b3&point=000&area_color=white&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph',
+  },
+  {
+    title: 'streak',
+    img: 'https://github-readme-streak-stats.herokuapp.com/?user=cuongvu3009',
+  },
+  {
+    title: 'langs',
+    img: 'https://github-readme-stats.vercel.app/api/top-langs/?username=cuongvu3009&hide=shell&layout=compact&langs_count=8',
+  },
+  {
+    title: 'info',
+    img: 'https://github-readme-stats.vercel.app/api?username=cuongvu3009&show_icons=true&locale=en',
   },
 ];

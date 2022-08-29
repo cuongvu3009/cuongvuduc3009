@@ -1,40 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './modal.css';
 import { Link } from 'react-router-dom';
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Modal = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
-    <div
-      className='md-background'
-      onMouseEnter={() => setShowModal(true)}
-      onMouseLeave={() => setShowModal(false)}
-    >
-      <GiHamburgerMenu size={40} />
+    <nav className='md-background'>
+      <div className='md-content'>
+        <Link to='/'>
+          <button className='md-item'>Home</button>
+        </Link>
 
-      {showModal && (
-        <div className='md-content'>
-          <ul className='md-list'>
-            <Link to='/' className='md-item'>
-              <li>Home </li>
-            </Link>
+        <Link to='/about'>
+          <button className='md-item'>About</button>
+        </Link>
 
-            <Link to='/about' className='md-item'>
-              <li>About </li>
-            </Link>
+        <Link to='/projects'>
+          <button className='md-item'>Projects</button>
+        </Link>
 
-            <Link to='/projects' className='md-item'>
-              <li>Projects</li>
-            </Link>
+        <Link to='/resume'>
+          <button className='md-item'>Resume</button>
+        </Link>
 
-            <Link to='/contact' className='md-item'>
-              <li> Contact </li>
-            </Link>
-          </ul>
-        </div>
-      )}
-    </div>
+        <Link to='/contact'>
+          <button className='md-bigBtn'>Contact Me</button>
+        </Link>
+      </div>
+    </nav>
   );
 };
 

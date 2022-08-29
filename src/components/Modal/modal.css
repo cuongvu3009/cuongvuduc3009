@@ -1,37 +1,41 @@
 .md-background {
-  display: flex;
-  top: 20px;
-  left: 20px;
-  position: absolute;
-  border-radius: 5px;
-  background-color: rgb(229, 229, 160);
-  z-index: 99;
-  cursor: pointer;
-  padding: 5px;
+  width: 100%;
+  background: black;
 }
 
 .md-content {
-  height: auto;
-  width: auto;
-  margin: 20px;
-}
-
-.md-list {
-  padding: 0;
   display: flex;
-  list-style: none;
-  justify-content: center;
   align-items: center;
-  gap: 30px;
+  justify-content: flex-end;
+  margin-right: 50px;
 }
 
 .md-item {
-  font-weight: 600;
-  text-decoration: none;
-  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: inherit;
 }
 
 .md-item:hover {
-  color: green;
-  text-decoration: underline;
+}
+
+.md-bigBtn {
+  padding: 20px;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .md-content {
+    margin-right: 0px;
+    justify-content: center;
+  }
+
+  .md-item,
+  .md-bigBtn {
+    font-size: 13px;
+  }
 }

@@ -1,9 +1,13 @@
+.about {
+  background-color: rgb(31, 29, 29, 0.86);
+  height: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 .about-container {
   display: flex;
-  flex-direction: column;
-  background-color: rgb(31, 29, 29);
-  height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -32,7 +36,100 @@
   animation: next 3s infinite ease;
 }
 
-@keyframes next {
+.about-stack {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.about-column-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-column-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-column-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-column-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-github {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.github-flex {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.github-info-card {
+  background-color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+.stack-wrapper {
+  border: 1px solid #fff;
+  width: max-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.stack-link {
+  width: 130px;
+  text-align: center;
+  padding: 5px;
+}
+
+.stack-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.about-class {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgb(100, 190, 160);
+  color: white;
+  font-weight: bold;
+}
+
+. @keyframes next {
   0% {
     transform: translateY(-10px);
   }
@@ -41,5 +138,11 @@
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    display: none;
   }
 }

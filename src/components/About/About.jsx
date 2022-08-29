@@ -1,47 +1,311 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './about.css';
-import { FaReact } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
-import { SiRedux } from 'react-icons/si';
-import { SiNextdotjs } from 'react-icons/si';
-import { SiGatsby } from 'react-icons/si';
-import { SiGraphql } from 'react-icons/si';
+import { stacks, githubStats } from '../../data';
 
-import { SiFirebase } from 'react-icons/si';
-import { SiMongodb } from 'react-icons/si';
-import { SiExpress } from 'react-icons/si';
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 const About = () => {
+  const mostUsedStacks = stacks.slice(0, 11);
+  const leastUsedStacks = stacks.slice(11, 14);
+  const tools = stacks.slice(14, stacks.length);
+  console.log(mostUsedStacks);
+
   return (
-    <div className='about-container'>
-      <h1 className='about-item'>About Me</h1>
-      <p className='about-item'>I have built stuffs with these technologies</p>
-      <div className='about-item'>
-        <div className='icons-container'>
-          <h2>Front-end</h2>
-          <span className='about-icons'>
-            <FaReact size={50} className='about-icon' />
-            <SiTypescript size={50} className='about-icon' />
-            <SiRedux size={50} className='about-icon' />
-            <SiGraphql size={50} className='about-icon' />
-          </span>
-        </div>
+    <div className='about'>
+      <h1 style={{ color: '#fff', padding: '50px' }}>
+        Technology I am using:{' '}
+      </h1>
+      <div className='about-container'>
+        <div className='about-stack'>
+          <div className='about-column-1'>
+            {mostUsedStacks.slice(0, 6).map((item) => {
+              const purple = '#6a1b9a';
+              const green = '#00695c';
+              const yellow = '#ef6c00';
 
-        <div className='icons-container'>
-          <h2>Front-end Frameworks</h2>
-          <span className='about-icons'>
-            <SiNextdotjs size={50} className='about-icon' />
-            <SiGatsby size={50} className='about-icon' />
-          </span>
-        </div>
+              if (item.level === 'novice') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
 
-        <div className='icons-container'>
-          <h2>Back-end</h2>
-          <span className='about-icons'>
-            <SiFirebase size={50} className='about-icon' />
-            <SiMongodb size={50} className='about-icon' />
-            <SiExpress size={50} className='about-icon' />
-          </span>
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={purple} completed={65} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'good') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={green} completed={80} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'excellent') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={yellow} completed={90} />
+                    </div>
+                  </article>
+                );
+              }
+            })}
+          </div>
+
+          <div className='about-column-2'>
+            {mostUsedStacks.slice(6, 12).map((item) => {
+              const purple = '#6a1b9a';
+              const green = '#00695c';
+              const yellow = '#ef6c00';
+
+              if (item.level === 'novice') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={purple} completed={65} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'good') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={green} completed={80} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'excellent') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={yellow} completed={90} />
+                    </div>
+                  </article>
+                );
+              }
+            })}
+          </div>
+
+          <div className='about-column-3'>
+            {leastUsedStacks.map((item) => {
+              const purple = '#6a1b9a';
+              const green = '#00695c';
+              const yellow = '#ef6c00';
+
+              if (item.level === 'novice') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={purple} completed={65} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'good') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={green} completed={80} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'excellent') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={yellow} completed={90} />
+                    </div>
+                  </article>
+                );
+              }
+            })}
+          </div>
+
+          <div className='about-column-4'>
+            {tools.map((item) => {
+              const purple = '#6a1b9a';
+              const green = '#00695c';
+              const yellow = '#ef6c00';
+
+              if (item.level === 'novice') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={purple} completed={65} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'good') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={green} completed={80} />
+                    </div>
+                  </article>
+                );
+              }
+              if (item.level === 'excellent') {
+                return (
+                  <article key={item.title} className='stack-wrapper'>
+                    <p className='about-class'>{item.class}</p>
+                    <a href={item.link} className='stack-link'>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className='styled-img'
+                      />
+                      <h4 className='stack-title'>{item.title}</h4>
+                    </a>
+
+                    <div className='stack-progress'>
+                      <ProgressBar bgcolor={yellow} completed={90} />
+                    </div>
+                  </article>
+                );
+              }
+            })}
+          </div>
+        </div>
+      </div>
+
+      <h1 style={{ color: '#fff', padding: '50px' }}>
+        More about my github stats (live):
+      </h1>
+      <div className='about-github'>
+        <div className='github-flex'>
+          <img
+            alt=''
+            src='https://activity-graph.herokuapp.com/graph?username=cuongvu3009&bg_color=ffff&color=000&line=0891b3&point=000&area_color=white&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph'
+          />
+        </div>
+        <div className='github-flex'>
+          <img
+            src='https://github-readme-streak-stats.herokuapp.com/?user=cuongvu3009'
+            alt=''
+          />
+          <img
+            src='https://github-readme-stats.vercel.app/api/top-langs/?username=cuongvu3009&hide=shell&layout=compact&langs_count=8'
+            alt=''
+          />
+          <img
+            src='https://github-readme-stats.vercel.app/api?username=cuongvu3009&show_icons=true&locale=en'
+            alt=''
+          />
         </div>
       </div>
     </div>
