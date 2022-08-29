@@ -6,35 +6,25 @@ const Modal = () => {
   return (
     <nav className='md-background'>
       <div className='md-content'>
-        <button className='md-item'>
-          <Link to='/' className='styled-link'>
-            Home
-          </Link>
-        </button>
+        <Link to='/' className='styled-link'>
+          <button className='md-item'>Home</button>
+        </Link>
 
-        <button className='md-item'>
-          <Link to='/about' className='styled-link'>
-            About
-          </Link>
-        </button>
+        <Link to='/about' className='styled-link'>
+          <button className='md-item'>About</button>
+        </Link>
 
-        <button className='md-item'>
-          <Link to='/projects' className='styled-link'>
-            Projects
-          </Link>
-        </button>
+        <Link to='/projects' className='styled-link'>
+          <button className='md-item'>Projects</button>
+        </Link>
 
-        <button className='md-item'>
-          <Link to='/resume' className='styled-link'>
-            Resume
-          </Link>
-        </button>
+        <Link to='/resume' className='styled-link'>
+          <button className='md-item'>Resume</button>
+        </Link>
 
-        <button className='md-bigBtn'>
-          <Link to='/contact' className='styled-link'>
-            Contact Me
-          </Link>
-        </button>
+        <Link to='/contact' className='styled-link'>
+          <button className='md-bigBtn'>Contact Me</button>
+        </Link>
       </div>
     </nav>
   );
