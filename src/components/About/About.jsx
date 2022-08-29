@@ -6,8 +6,10 @@ import ProgressBar from '../ProgressBar/ProgressBar';
 
 const About = () => {
   const mostUsedStacks = stacks.slice(0, 11);
-  const leastUsedStacks = stacks.slice(11, 14);
-  const tools = stacks.slice(14, stacks.length);
+  const leastUsedStacks = stacks.slice(11, 13);
+  const tools = stacks.slice(13, stacks.length);
+
+  console.log(tools);
 
   return (
     <div className='about'>
@@ -154,7 +156,7 @@ const About = () => {
 
           <div className='line'></div>
           <div className='about-column-3'>
-            {tools.map((item) => {
+            {leastUsedStacks.map((item) => {
               const purple = '#6a1b9a';
               const green = '#00695c';
               const yellow = '#ef6c00';
@@ -222,7 +224,7 @@ const About = () => {
           </div>
 
           <div className='about-column-4'>
-            {leastUsedStacks.map((item) => {
+            {tools.map((item) => {
               const purple = '#6a1b9a';
               const green = '#00695c';
               const yellow = '#ef6c00';
