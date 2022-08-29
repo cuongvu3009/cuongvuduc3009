@@ -4,4 +4,11 @@
   color: 'gray';
   border-top: 1px;
   border-color: 'gray';
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .footerContainer {
+    padding-bottom: 80px;
+  }
 }

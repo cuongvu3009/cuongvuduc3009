@@ -35,15 +35,7 @@
     padding: 0;
   }
 
-  .pl-title {
-    display: none;
-  }
-
   .pl-texts {
     width: 100%;
-  }
-
-  .pl-desc {
-    display: none;
   }
 }

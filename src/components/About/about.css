@@ -129,6 +129,10 @@
   font-weight: bold;
 }
 
+.line {
+  display: none;
+}
+
 . @keyframes next {
   0% {
     transform: translateY(-10px);
@@ -143,6 +147,59 @@
 
 @media screen and (max-width: 480px) {
   .about {
+    padding: 0;
+    padding-bottom: 80px;
+  }
+
+  .about-class {
     display: none;
+  }
+
+  .about-container {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .stack-wrapper {
+    padding: 0;
+  }
+
+  .stack-progress {
+    display: none;
+  }
+
+  .about-stack {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .stack-wrapper {
+  }
+  .about-column-1,
+  .about-column-2,
+  .about-column-3,
+  .about-column-4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-github {
+    max-width: 100%;
+    gap: 5px;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .github-flex {
+    gap: 5px;
+  }
+
+  .github-graph {
+    width: 100%;
   }
 }

@@ -152,8 +152,9 @@ const About = () => {
             })}
           </div>
 
+          <div className='line'></div>
           <div className='about-column-3'>
-            {leastUsedStacks.map((item) => {
+            {tools.map((item) => {
               const purple = '#6a1b9a';
               const green = '#00695c';
               const yellow = '#ef6c00';
@@ -221,7 +222,7 @@ const About = () => {
           </div>
 
           <div className='about-column-4'>
-            {tools.map((item) => {
+            {leastUsedStacks.map((item) => {
               const purple = '#6a1b9a';
               const green = '#00695c';
               const yellow = '#ef6c00';
@@ -298,20 +299,24 @@ const About = () => {
           <img
             alt=''
             src='https://activity-graph.herokuapp.com/graph?username=cuongvu3009&bg_color=ffff&color=000&line=0891b3&point=000&area_color=white&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph'
+            className='github-graph'
           />
         </div>
         <div className='github-flex'>
           <img
             src='https://github-readme-streak-stats.herokuapp.com/?user=cuongvu3009'
             alt=''
+            className='github-graph'
           />
           <img
             src='https://github-readme-stats.vercel.app/api/top-langs/?username=cuongvu3009&hide=shell&layout=compact&langs_count=8'
             alt=''
+            className='github-graph'
           />
           <img
             src='https://github-readme-stats.vercel.app/api?username=cuongvu3009&show_icons=true&locale=en'
             alt=''
+            className='github-graph'
           />
         </div>
       </div>
