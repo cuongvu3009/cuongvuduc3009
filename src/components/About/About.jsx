@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './about.css';
-import { stacks, githubStats } from '../../data';
+import { stacks } from '../../data';
 
 import ProgressBar from '../ProgressBar/ProgressBar';
 
@@ -8,7 +8,6 @@ const About = () => {
   const mostUsedStacks = stacks.slice(0, 11);
   const leastUsedStacks = stacks.slice(11, 14);
   const tools = stacks.slice(14, stacks.length);
-  console.log(mostUsedStacks);
 
   return (
     <div className='about'>
@@ -79,6 +78,8 @@ const About = () => {
                     </div>
                   </article>
                 );
+              } else {
+                return null;
               }
             })}
           </div>
@@ -103,7 +104,7 @@ const About = () => {
                     </a>
 
                     <div className='stack-progress'>
-                      <ProgressBar bgcolor={purple} completed={65} />
+                      <ProgressBar bgcolor={purple} completed={50} />
                     </div>
                   </article>
                 );
@@ -145,6 +146,8 @@ const About = () => {
                     </div>
                   </article>
                 );
+              } else {
+                return null;
               }
             })}
           </div>
@@ -211,6 +214,8 @@ const About = () => {
                     </div>
                   </article>
                 );
+              } else {
+                return null;
               }
             })}
           </div>
@@ -277,6 +282,8 @@ const About = () => {
                     </div>
                   </article>
                 );
+              } else {
+                return null;
               }
             })}
           </div>

@@ -39,7 +39,7 @@
 .about-stack {
   display: flex;
   width: 80%;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .about-column-1 {

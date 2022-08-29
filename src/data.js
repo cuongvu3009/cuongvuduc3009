@@ -121,7 +121,7 @@ export const stacks = [
     title: 'tailwind',
     link: 'https://tailwindcss.com/',
     img: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
-    level: 'excellent',
+    level: 'good',
     class: 'FE',
   },
   {
@@ -135,7 +135,7 @@ export const stacks = [
     title: 'angular',
     link: 'https://angular.io/',
     img: 'https://www.vectorlogo.zone/logos/angular/angular-icon.svg',
-    level: 'good',
+    level: 'novice',
     class: 'FE',
   },
   {
@@ -165,7 +165,7 @@ export const stacks = [
     title: 'django',
     link: 'https://www.djangoproject.com/',
     img: 'https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg',
-    level: 'good',
+    level: 'novice',
     class: 'BE',
   },
   {
@@ -187,7 +187,7 @@ export const stacks = [
     title: 'postgresql',
     link: 'https://www.postgresql.org/',
     img: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-vertical.svg',
-    level: 'good',
+    level: 'novice',
     class: 'DB',
   },
   {
@@ -229,26 +229,7 @@ export const stacks = [
     title: 'aws',
     link: 'https://aws.amazon.com/',
     img: 'https://www.vectorlogo.zone/logos/amazon_awslambda/amazon_awslambda-icon.svg',
-    level: 'excellent',
+    level: 'good',
     class: 'Tool',
-  },
-];
-
-export const githubStats = [
-  {
-    title: 'activity',
-    img: 'https://activity-graph.herokuapp.com/graph?username=cuongvu3009&bg_color=ffff&color=000&line=0891b3&point=000&area_color=white&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph',
-  },
-  {
-    title: 'streak',
-    img: 'https://github-readme-streak-stats.herokuapp.com/?user=cuongvu3009',
-  },
-  {
-    title: 'langs',
-    img: 'https://github-readme-stats.vercel.app/api/top-langs/?username=cuongvu3009&hide=shell&layout=compact&langs_count=8',
-  },
-  {
-    title: 'info',
-    img: 'https://github-readme-stats.vercel.app/api?username=cuongvu3009&show_icons=true&locale=en',
   },
 ];
