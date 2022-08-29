@@ -7,7 +7,7 @@ import { FaFreeCodeCamp } from 'react-icons/fa';
 
 const Intro = () => {
   return (
-    <div className='container'>
+    <div className='intro-container'>
       <div className='bg'></div>
 
       <div className='main-content'>
