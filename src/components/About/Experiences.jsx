@@ -3,7 +3,7 @@ import { FaAngleDoubleRight } from 'react-icons/fa';
 import { experiences } from '../../data';
 
 function Experiences() {
-  const [jobs, setJobs] = useState(experiences);
+  const [jobs] = useState(experiences);
   const [value, setValue] = useState(0);
 
   //this line below needed to be put below loading function
