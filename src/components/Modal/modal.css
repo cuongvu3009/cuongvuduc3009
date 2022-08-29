@@ -17,6 +17,8 @@
 }
 
 .md-item:hover {
+  background-color: white;
+  color: black;
 }
 
 .md-bigBtn {

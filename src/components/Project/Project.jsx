@@ -24,6 +24,7 @@ const Project = ({ img, demo, repo, tech, name, desc }) => {
           className='question-btn'
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
+          onClick={() => setIsShown(true)}
         >
           <BsFillQuestionCircleFill size={20} />
         </button>
