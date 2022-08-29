@@ -3,6 +3,7 @@ import './about.css';
 import { stacks } from '../../data';
 
 import ProgressBar from '../ProgressBar/ProgressBar';
+import Experiences from './Experiences';
 
 const About = () => {
   const mostUsedStacks = stacks.slice(0, 11);
@@ -322,6 +323,7 @@ const About = () => {
           />
         </div>
       </div>
+      <Experiences />
     </div>
   );
 };

@@ -233,3 +233,57 @@ export const stacks = [
     class: 'Tool',
   },
 ];
+
+export const experiences = [
+  {
+    id: 'rec61x18GVY99hQq5',
+    order: 1,
+    title: 'FULL STACK DEVELOPER',
+    dates: 'May 2022 - September 2022',
+    duties: [
+      'Developed an internal project for the firm using React.js, Node.js, and other Micro service technologies to store documents.',
+      'Building e-commerce web-based applications with frameworks such as React.js, Node.js and Express.js.',
+      'Team work with other developers to deliver web service on time, also, communicate with client for efficient result.',
+      'Working with DevOps practices (Bash scripting, Docker containers, and CI/CD with GitHub Actions) and Cloud Services with AWS.',
+    ],
+    company: 'Mehtaheino | Espoo, Finland ',
+  },
+  {
+    id: 'rec61x18GVY99hQq5',
+    order: 2,
+    title: 'FULL STACK DEVELOPER',
+    dates: 'October 2021 - February 2022',
+    duties: [
+      'Sharpening competence as a Full Stack Developer by collaborating with other developers of different seniorities on a diverse range of projects and real-life challenges.',
+      'Focusing on front-end development with JavaScript, TypeScript, React.js, Redux in addition to other technologies and concepts such as accessibility and animations.',
+      'Building back-end for web-based applications with frameworks such as Node.js and Express.js.',
+      'Covering additional concepts such as API development and documentation, unit testing with Jest, SQL and NoSQL databases, and version control with GitHub.',
+      'Working with DevOps practices (Bash scripting, Docker containers, and CI/CD with GitHub Actions) and Cloud Services with AWS.',
+    ],
+    company: 'Integrify | Helsinki, Finland ',
+  },
+  {
+    id: 'recIL6mJNfWObonls',
+    order: 3,
+    title: 'WEB DEVELOPER INTERNSHIP',
+    dates: 'January 2020 - July 2020',
+    duties: [
+      'Developed an internal project for the firm using React.js, JavaScript, and other Micro frontend technologies to store learning documents and engage among each other',
+      'Collaborated with 10 team members including a scrum master and project owner to ideate and deliver projects on a quarterly basis',
+      "Contributed to the annual income of the company's revenue of €2.5 million euros by delivering internal projects and shadowing lead developers on large projects",
+    ],
+    company: 'redWEB ApS | Ho Chi Minh City, Vietnam',
+  },
+  {
+    id: 'recAGJfiU4CeaV0HL',
+    order: 4,
+    title: 'Web Developer',
+    dates: 'February 2019 - August 2019',
+    duties: [
+      'Developed a website with WordPress for an e-commerce company consisting of five primary members focusing on the sales of smartphones and accessories leading to a monthly revenue of 135 million Vietnamese Dong (VND).',
+      'Created several content materials for the website by benchmarking from the top 10 e-commerce platforms in Asia to generate monthly sales for the company.',
+      'Managed paid and organic marketing on Google and Facebook using their advertising platforms on a total budget of 5 million VND.',
+    ],
+    company: 'Thinh Vu Phu Kien | Ho Chi Minh City, Vietnam',
+  },
+];
