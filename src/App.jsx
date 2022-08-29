@@ -6,6 +6,7 @@ import About from './components/About/About.jsx';
 import ProjectList from './components/ProJectList/ProjectList';
 import Contact from './components/Contact/Contact';
 import Modal from './components/Modal/Modal';
+import Resume from './components/Resume/Resume';
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<ProjectList />}></Route>
-
+        <Route path='/projects' element={<ProjectList />} />
+        <Route path='/resume' element={<Resume />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>
