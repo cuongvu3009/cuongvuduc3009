@@ -145,7 +145,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1350px) {
   .about {
     padding: 0;
     padding-bottom: 80px;
@@ -186,19 +186,24 @@
     justify-content: center;
   }
 
-  .about-github {
-    max-width: 100%;
-    gap: 5px;
-  }
-
   .line {
     display: block;
   }
 
+  .github-graph {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about-github {
+    max-width: 100%;
+    gap: 5px;
+  }
   .github-flex {
     gap: 5px;
   }
-
   .github-graph {
     width: 100%;
   }

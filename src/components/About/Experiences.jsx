@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import { experiences } from '../../data';
+import './experiences.css';
 
 function Experiences() {
   const [jobs] = useState(experiences);
@@ -10,7 +11,7 @@ function Experiences() {
   const { company, dates, duties, title } = jobs[value];
   return (
     <section className='section'>
-      <h1 style={{ color: '#fff', padding: '50px' }}>Experiences:</h1>
+      <h1 style={{ color: '#000', padding: '50px' }}>Experiences</h1>
 
       <div className='jobs-center'>
         <div className='btn-container'>
@@ -27,9 +28,10 @@ function Experiences() {
           })}
         </div>
         <article className='job-info'>
-          <h3>{title}</h3>
-          <h4>{company}</h4>
+          <h3 className='ex-title'>{title}</h3>
           <p className='job-date'>{dates}</p>
+          <h4 className='ex-company'>{company}</h4>
+
           {duties.map((duty, index) => {
             return (
               <div key={index} className='job-desc'>

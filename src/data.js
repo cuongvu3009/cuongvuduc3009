@@ -277,7 +277,7 @@ export const experiences = [
   {
     id: 'recAGJfiU4CeaV0HL',
     order: 4,
-    title: 'Web Developer',
+    title: 'WEB DEVELOPER',
     dates: 'February 2019 - August 2019',
     duties: [
       'Developed a website with WordPress for an e-commerce company consisting of five primary members focusing on the sales of smartphones and accessories leading to a monthly revenue of 135 million Vietnamese Dong (VND).',
