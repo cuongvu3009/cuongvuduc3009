@@ -9,9 +9,11 @@ import store from './img/store.png';
 import job from './img/job.png';
 import blogMega from './img/blogMega.png';
 
+import { v4 as uuidv4 } from 'uuid';
+
 export const products = [
   {
-    id: 1,
+    id: uuidv4(),
     img: blog,
     demo: 'https://blog3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/mdx-blog',
@@ -20,7 +22,7 @@ export const products = [
     desc: 'Blog App using Gatsby, Markdown',
   },
   {
-    id: 2,
+    id: uuidv4(),
     img: chatDemo,
     demo: 'https://chat-app-3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/chatApp',
@@ -29,7 +31,7 @@ export const products = [
     desc: 'Simple Chat app using ChatEngine.io',
   },
   {
-    id: 3,
+    id: uuidv4(),
     img: searchCoctails,
     demo: 'https://search-4-cocktails.netlify.app/',
     repo: 'https://github.com/cuongvu3009/ultimate-cocktails-db',
@@ -38,7 +40,7 @@ export const products = [
     desc: 'Simple search cocktail app using https://www.thecocktaildb.com/ api, that fetch cocktails recipe bases on custom search',
   },
   {
-    id: 4,
+    id: uuidv4(),
     img: hackernews,
     demo: 'https://hackernews3009.netlify.app/',
     repo: 'http://github.com/cuongvu3009/hacker-news',
@@ -47,7 +49,7 @@ export const products = [
     desc: 'Study redux by making a simple hacker news, which fetch api from https://hn.algolia.com/api/v1',
   },
   {
-    id: 5,
+    id: uuidv4(),
     img: recipes,
     demo: 'https://recipes3009.netlify.app/about',
     repo: 'http://github.com/cuongvu3009/simply-recipes',
@@ -56,7 +58,7 @@ export const products = [
     desc: 'Gatsby website',
   },
   {
-    id: 6,
+    id: uuidv4(),
     img: realEstate,
     demo: 'https://real-estate-3009.vercel.app/',
     repo: 'https://github.com/cuongvu3009/real-estate',
@@ -65,7 +67,7 @@ export const products = [
     desc: 'Study Next by making a real estate website. The api is provided by rapidapi',
   },
   {
-    id: 7,
+    id: uuidv4(),
     img: github,
     demo: 'https://github-3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/Github-3009',
@@ -74,7 +76,7 @@ export const products = [
     desc: 'Search any github user profile at ease. This website includes authentication which powered by auth0. The api is provided by https://api.github.com',
   },
   {
-    id: 8,
+    id: uuidv4(),
     img: store,
     demo: 'https://store-3009.netlify.app/',
     repo: 'https://github.com/cuongvu3009/store',
@@ -83,7 +85,7 @@ export const products = [
     desc: 'Ecommerce website which utilize stripe for payment, and auth0 for authentication. The main skeleton of state management is backed by context api.',
   },
   {
-    id: 9,
+    id: uuidv4(),
     img: job,
     demo: 'https://job-3009.herokuapp.com/',
     repo: 'https://github.com/cuongvu3009/jobify',
@@ -92,7 +94,7 @@ export const products = [
     desc: 'Job search website with authentication, analysis dashboard, and add job features',
   },
   {
-    id: 10,
+    id: uuidv4(),
     img: blogMega,
     demo: 'https://blog-3009.herokuapp.com/',
     repo: 'https://github.com/cuongvu3009/blog3009',
@@ -236,22 +238,22 @@ export const stacks = [
 
 export const experiences = [
   {
-    id: 'rec61x18GVY99hQq5',
+    id: uuidv4(),
     order: 1,
-    title: 'FULL STACK DEVELOPER',
+    title: 'FULL STACK DEVELOPER - Fulltime',
     dates: 'May 2022 - September 2022',
     duties: [
-      'Developed an internal project for the firm using React.js, Node.js, and other Micro service technologies to store documents.',
-      'Building e-commerce web-based applications with frameworks such as React.js, Node.js and Express.js.',
-      'Team work with other developers to deliver web service on time, also, communicate with client for efficient result.',
+      'Developed an ecommerce website project for the firm using React.js, Node.js, and other Micro service technologies.',
+      'Designed a web-based applications structure, to make it scalable and functional.',
+      'Team work with other developers to deliver web service on time, also, communicate with UI designer, sales team and content creator for efficient workflow.',
       'Working with DevOps practices (Bash scripting, Docker containers, and CI/CD with GitHub Actions) and Cloud Services with AWS.',
     ],
     company: 'Mehtaheino | Espoo, Finland ',
   },
   {
-    id: 'rec61x18GVY99hQq5',
+    id: uuidv4(),
     order: 2,
-    title: 'FULL STACK DEVELOPER',
+    title: 'FULL STACK DEVELOPER - Fulltime',
     dates: 'October 2021 - February 2022',
     duties: [
       'Sharpening competence as a Full Stack Developer by collaborating with other developers of different seniorities on a diverse range of projects and real-life challenges.',
@@ -263,9 +265,21 @@ export const experiences = [
     company: 'Integrify | Helsinki, Finland ',
   },
   {
-    id: 'recIL6mJNfWObonls',
+    id: uuidv4(),
     order: 3,
-    title: 'WEB DEVELOPER INTERNSHIP',
+    title: 'FULL STACK DEVELOPER TRAINEE - Parttime',
+    dates: 'Mar 2021 - Jun 2021',
+    duties: [
+      'Collaborated with other team members to ideate and deliver projects on a quarterly basis',
+      'Working closely with a senior developer to provide a qualified and professional UI',
+      'Applying industrial standard languages such as Javascript, HTML, CSS, React to a internal web application project',
+    ],
+    company: 'Yield Systems | Espoo, Finland ',
+  },
+  {
+    id: uuidv4(),
+    order: 4,
+    title: 'WEB DEVELOPER INTERNSHIP - Fulltime',
     dates: 'January 2020 - July 2020',
     duties: [
       'Developed an internal project for the firm using React.js, JavaScript, and other Micro frontend technologies to store learning documents and engage among each other',
@@ -275,9 +289,21 @@ export const experiences = [
     company: 'redWEB ApS | Ho Chi Minh City, Vietnam',
   },
   {
-    id: 'recAGJfiU4CeaV0HL',
-    order: 4,
-    title: 'WEB DEVELOPER',
+    id: uuidv4(),
+    order: 5,
+    title: 'WORDPRESS DEVELOPER - SELF-EMPLOYED',
+    dates: 'Mar 2018 - Feb 2020 ',
+    duties: [
+      'Developed a ecommerce wordpress website by utilized a power of WooCommerce pluggin',
+      'Created several content materials for the website by benchmarking from the top 10 e-commerce platforms in Asia to generate monthly sales for the company.',
+      'Managed paid and organic marketing on Google and Facebook using their advertising platforms on a total budget of 5 million VND.',
+    ],
+    company: 'Outdoorthrillz | Online',
+  },
+  {
+    id: uuidv4(),
+    order: 6,
+    title: 'WEB DEVELOPER - Fulltime',
     dates: 'February 2019 - August 2019',
     duties: [
       'Developed a website with WordPress for an e-commerce company consisting of five primary members focusing on the sales of smartphones and accessories leading to a monthly revenue of 135 million Vietnamese Dong (VND).',
