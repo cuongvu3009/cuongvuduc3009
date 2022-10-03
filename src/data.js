@@ -8,6 +8,7 @@ import github from './img/github.png';
 import store from './img/store.png';
 import job from './img/job.png';
 import blogMega from './img/blogMega.png';
+import social from './img/social.png';
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -102,6 +103,15 @@ export const products = [
     tech: 'React, JWT, Mongodb, Context API, Heroku, Node, Express',
     desc: 'Blog website with authentication, and add blog',
   },
+  {
+    id: uuidv4(),
+    img: social,
+    demo: 'https://chat-app-3009.netlify.app/',
+    repo: 'https://github.com/cuongvu3009/social-firebase',
+    name: 'Social website',
+    tech: 'React, Firebase',
+    desc: 'Social website with authentication, add post, comment, chat, online status.. all powered by firebase',
+  },
 ];
 
 export const stacks = [
@@ -158,7 +168,7 @@ export const stacks = [
   {
     title: 'expressjs',
     link: 'https://expressjs.com/',
-    img: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png',
+    img: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg',
     level: 'excellent',
     class: 'BE',
   },
