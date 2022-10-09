@@ -9,6 +9,7 @@ import store from './img/store.png';
 import job from './img/job.png';
 import blogMega from './img/blogMega.png';
 import social from './img/social.png';
+import youtube from './img/youtube.png';
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -111,6 +112,15 @@ export const products = [
     name: 'Social website',
     tech: 'React, Firebase',
     desc: 'Social website with authentication, add post, comment, chat, online status.. all powered by firebase',
+  },
+  {
+    id: uuidv4(),
+    img: youtube,
+    demo: 'https://youtube-3009.netlify.app/',
+    repo: 'https://github.com/cuongvu3009/YoutubeClone-API',
+    name: 'Youtube clone website',
+    tech: 'React, JWT, Mongodb, Context API, Redux, Node, Express, Firebase',
+    desc: 'Youtube clone website with authentication, upload content, dark/light mode, comment, chat, like/dislike function',
   },
 ];
 
