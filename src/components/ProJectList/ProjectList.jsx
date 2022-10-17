@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './projectList.css';
 import Project from '../Project/Project';
-import { products } from '../../data';
 import Select from 'react-select';
 
 //	firebase
@@ -13,22 +12,26 @@ const ProjectList = () => {
   const [query, setQuery] = useState('');
 
   const categories = [
+    { value: '', label: 'All' },
     { value: 'Mern', label: 'Mern' },
     { value: 'React', label: 'Vanila React' },
     { value: 'Next', label: 'Next' },
     { value: 'Gatsby', label: 'Gatsby' },
     { value: 'Firebase', label: 'Firebase' },
+    { value: 'Context API', label: 'Context API' },
+    { value: 'Redux', label: 'Redux' },
   ];
+  console.log(query);
 
   // if we don't use a ref --> infinite loop in useEffect
   // cquery is an array and is "different" on every function call
-  const currentQuery = useRef(query).current;
+  // const currentQuery = useRef(query).current;
 
   useEffect(() => {
     let ref = projectFirestore.collection('projects');
 
-    if (currentQuery) {
-      ref = ref.where('tech', '=', query);
+    if (query) {
+      ref = ref.where('tech', 'array-contains', query);
     }
 
     const unsubcribe = ref.onSnapshot(
@@ -51,7 +54,7 @@ const ProjectList = () => {
 
     //	unsubscribe on unmount
     return () => unsubcribe();
-  }, []);
+  }, [query]);
 
   return (
     <div className='pl'>
