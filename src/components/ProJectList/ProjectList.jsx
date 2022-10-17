@@ -8,7 +8,7 @@ import { projectFirestore } from '../../firebase/config';
 
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
   //	remember to use useRef, if query is array to prevent infinitive loop in useEffect
   const [query, setQuery] = useState('');
 
