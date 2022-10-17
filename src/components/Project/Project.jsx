@@ -4,6 +4,7 @@ import { BsFillQuestionCircleFill } from 'react-icons/bs';
 
 const Project = ({ img, demo, repo, tech, name, desc }) => {
   const [isShown, setIsShown] = useState(false);
+
   return (
     <div className='p'>
       <div className='p-browser'>

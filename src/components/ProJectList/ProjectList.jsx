@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import './projectList.css';
 import Project from '../Project/Project';
 import Select from 'react-select';
@@ -9,6 +9,7 @@ import { projectFirestore } from '../../firebase/config';
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
   const [error, setError] = useState(null);
+  //	remember to use useRef, if query is array to prevent infinitive loop in useEffect
   const [query, setQuery] = useState('');
 
   const categories = [
@@ -21,11 +22,6 @@ const ProjectList = () => {
     { value: 'Context API', label: 'Context API' },
     { value: 'Redux', label: 'Redux' },
   ];
-  console.log(query);
-
-  // if we don't use a ref --> infinite loop in useEffect
-  // cquery is an array and is "different" on every function call
-  // const currentQuery = useRef(query).current;
 
   useEffect(() => {
     let ref = projectFirestore.collection('projects');
