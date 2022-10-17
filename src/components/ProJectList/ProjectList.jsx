@@ -1,9 +1,58 @@
+import { useState, useEffect, useRef } from 'react';
 import './projectList.css';
 import Project from '../Project/Project';
 import { products } from '../../data';
-import Sort from '../Sort/Sort';
+import Select from 'react-select';
+
+//	firebase
+import { projectFirestore } from '../../firebase/config';
 
 const ProjectList = () => {
+  const [projects, setProjects] = useState([]);
+  const [error, setError] = useState(null);
+  const [query, setQuery] = useState('');
+
+  const categories = [
+    { value: 'Mern', label: 'Mern' },
+    { value: 'React', label: 'Vanila React' },
+    { value: 'Next', label: 'Next' },
+    { value: 'Gatsby', label: 'Gatsby' },
+    { value: 'Firebase', label: 'Firebase' },
+  ];
+
+  // if we don't use a ref --> infinite loop in useEffect
+  // cquery is an array and is "different" on every function call
+  const currentQuery = useRef(query).current;
+
+  useEffect(() => {
+    let ref = projectFirestore.collection('projects');
+
+    if (currentQuery) {
+      ref = ref.where('tech', '=', query);
+    }
+
+    const unsubcribe = ref.onSnapshot(
+      (snapshot) => {
+        let results = [];
+
+        snapshot.docs.forEach((doc) => {
+          results.push({ ...doc.data(), id: doc.id });
+        });
+
+        //	update state
+        setProjects(results);
+        setError(null);
+      },
+      (error) => {
+        console.log(error);
+        setError('could not fetch data');
+      }
+    );
+
+    //	unsubscribe on unmount
+    return () => unsubcribe();
+  }, []);
+
   return (
     <div className='pl'>
       <div className='pl-texts'>
@@ -19,11 +68,18 @@ const ProjectList = () => {
           </a>
         </p>
 
-        <Sort />
+        {/* Sort */}
+        <div className='s-container'>
+          <Select
+            options={categories}
+            id='s-select'
+            onChange={(option) => setQuery(option.value)}
+          />
+        </div>
       </div>
 
       <div className='pl-list'>
-        {products.map((item) => (
+        {projects.map((item) => (
           <Project
             key={item.id}
             img={item.img}

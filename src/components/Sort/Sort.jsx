@@ -5,6 +5,9 @@ const Sort = () => {
   return (
     <div className='s-container'>
       <select name='tech' id='s-select'>
+        <option value='all' selected>
+          All
+        </option>
         <option value='mern'>MERN</option>
         <option value='react'>Vanila React</option>
         <option value='firebase'>Firebase</option>

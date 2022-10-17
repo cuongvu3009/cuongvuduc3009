@@ -10,8 +10,6 @@ const About = () => {
   const leastUsedStacks = stacks.slice(11, 13);
   const tools = stacks.slice(13, stacks.length);
 
-  console.log(tools);
-
   return (
     <div className='about'>
       <h1 style={{ color: '#fff', padding: '50px' }}>
