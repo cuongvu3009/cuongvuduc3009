@@ -1,6 +1,7 @@
 import './projectList.css';
 import Project from '../Project/Project';
 import { products } from '../../data';
+import Sort from '../Sort/Sort';
 
 const ProjectList = () => {
   return (
@@ -15,8 +16,10 @@ const ProjectList = () => {
             rel='noreferrer'
           >
             github repo
-          </a>{' '}
+          </a>
         </p>
+
+        <Sort />
       </div>
 
       <div className='pl-list'>
