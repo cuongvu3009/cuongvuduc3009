@@ -8,7 +8,6 @@ import { projectFirestore } from '../../firebase/config';
 
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
-  const [setError] = useState(null);
   //	remember to use useRef, if query is array to prevent infinitive loop in useEffect
   const [query, setQuery] = useState('');
 
@@ -30,23 +29,16 @@ const ProjectList = () => {
       ref = ref.where('tech', 'array-contains', query);
     }
 
-    const unsubcribe = ref.onSnapshot(
-      (snapshot) => {
-        let results = [];
+    const unsubcribe = ref.onSnapshot((snapshot) => {
+      let results = [];
 
-        snapshot.docs.forEach((doc) => {
-          results.push({ ...doc.data(), id: doc.id });
-        });
+      snapshot.docs.forEach((doc) => {
+        results.push({ ...doc.data(), id: doc.id });
+      });
 
-        //	update state
-        setProjects(results);
-        setError(null);
-      },
-      (error) => {
-        console.log(error);
-        setError('could not fetch data');
-      }
-    );
+      //	update state
+      setProjects(results);
+    });
 
     //	unsubscribe on unmount
     return () => unsubcribe();
