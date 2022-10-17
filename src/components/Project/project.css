@@ -1,29 +1,20 @@
 .p {
   width: 30%;
-  height: 40vh;
-  margin: 0 auto;
+  height: 35vh;
+  margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
 }
 
 .p-browser {
-  height: 50px;
+  padding: 4px;
   background-color: rgb(233, 212, 212);
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 2;
-}
-
-.project-btn {
-  height: 100%;
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-left: 10px;
-  padding: 5px;
 }
 
 .p-img {
@@ -39,16 +30,22 @@
 .question-btn {
   padding: 5px;
   border-radius: 5px;
-  right: 5px;
-  top: 0;
-  position: absolute;
+  margin: 0;
+}
+
+.project-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px;
+  margin: 0;
 }
 
 .links-group {
-  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
 }
 
 .project-info {
@@ -61,25 +58,15 @@
   font-size: 14.5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 590px) {
   .p {
     width: 100%;
-    height: 32vh;
+    height: 25vh;
   }
+}
 
-  .p-browser {
-    height: 20%;
-  }
-
-  .project-btn {
-  }
-
-  .question-btn {
-    padding: 5px;
-    right: 0;
-    margin: 0;
-  }
-
-  .link-group {
+@media screen and (max-width: 1500px) {
+  .p {
+    height: 18vh;
   }
 }

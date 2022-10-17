@@ -62,6 +62,7 @@ body {
 a {
   text-decoration: none;
   text-transform: capitalize;
+  color: inherit;
 }
 
 form {
@@ -92,7 +93,6 @@ textarea {
 
 button {
   border: none;
-  padding: 15px;
   background-color: #59b256;
   color: white;
   font-weight: 500;

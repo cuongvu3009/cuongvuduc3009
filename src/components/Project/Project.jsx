@@ -9,16 +9,17 @@ const Project = ({ img, demo, repo, tech, name, desc }) => {
     <div className='p'>
       <div className='p-browser'>
         <div className='links-group'>
-          <a href={demo} target='_blank' rel='noreferrer'>
-            <button className='project-btn'>
+          <button className='project-btn'>
+            <a href={demo}>
               <h3>Demo </h3>
-            </button>
-          </a>
-          <a href={repo} target='_blank' rel='noreferrer'>
-            <button className='project-btn'>
+            </a>
+          </button>
+
+          <button className='project-btn'>
+            <a href={repo}>
               <h3>Repo</h3>
-            </button>
-          </a>
+            </a>
+          </button>
         </div>
 
         <button
