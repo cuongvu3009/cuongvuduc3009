@@ -1,6 +1,6 @@
 .p {
   width: 30%;
-  height: 35vh;
+  height: 38vh;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
   border-radius: 10px 10px 0px 0px;
@@ -67,6 +67,6 @@
 
 @media screen and (max-width: 1500px) {
   .p {
-    height: 18vh;
+    height: 32vh;
   }
 }
