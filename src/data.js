@@ -153,13 +153,7 @@ export const stacks = [
     level: 'good',
     class: 'FE',
   },
-  {
-    title: 'angular',
-    link: 'https://angular.io/',
-    img: 'https://www.vectorlogo.zone/logos/angular/angular-icon.svg',
-    level: 'novice',
-    class: 'FE',
-  },
+
   {
     title: 'graphql',
     link: 'https://graphql.org/',
@@ -183,20 +177,6 @@ export const stacks = [
     class: 'BE',
   },
 
-  {
-    title: 'django',
-    link: 'https://www.djangoproject.com/',
-    img: 'https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg',
-    level: 'novice',
-    class: 'BE',
-  },
-  {
-    title: 'spring',
-    link: 'https://spring.io/projects/spring-boot',
-    img: 'https://www.vectorlogo.zone/logos/springio/springio-ar21.svg',
-    level: 'novice',
-    class: 'BE',
-  },
   {
     title: 'firebase',
     link: 'https://firebase.google.com/',
@@ -261,7 +241,7 @@ export const experiences = [
     id: uuidv4(),
     order: 1,
     title: 'FULL STACK DEVELOPER - Fulltime',
-    dates: 'May 2022 - September 2022',
+    dates: 'July 2022 - October 2022',
     duties: [
       'Developed an ecommerce website project for the firm using React.js, Node.js, and other Micro service technologies.',
       'Designed a web-based applications structure, to make it scalable and functional.',
@@ -274,7 +254,7 @@ export const experiences = [
     id: uuidv4(),
     order: 2,
     title: 'FULL STACK DEVELOPER - Fulltime',
-    dates: 'October 2021 - February 2022',
+    dates: 'October 2021 - November 2022',
     duties: [
       'Sharpening competence as a Full Stack Developer by collaborating with other developers of different seniorities on a diverse range of projects and real-life challenges.',
       'Focusing on front-end development with JavaScript, TypeScript, React.js, Redux in addition to other technologies and concepts such as accessibility and animations.',
@@ -283,18 +263,6 @@ export const experiences = [
       'Working with DevOps practices (Bash scripting, Docker containers, and CI/CD with GitHub Actions) and Cloud Services with AWS.',
     ],
     company: 'Integrify | Helsinki, Finland ',
-  },
-  {
-    id: uuidv4(),
-    order: 3,
-    title: 'FULL STACK DEVELOPER TRAINEE - Parttime',
-    dates: 'Mar 2021 - Jun 2021',
-    duties: [
-      'Collaborated with other team members to ideate and deliver projects on a quarterly basis',
-      'Working closely with a senior developer to provide a qualified and professional UI',
-      'Applying industrial standard languages such as Javascript, HTML, CSS, React to a internal web application project',
-    ],
-    company: 'Yield Systems | Espoo, Finland ',
   },
   {
     id: uuidv4(),
@@ -307,29 +275,5 @@ export const experiences = [
       "Contributed to the annual income of the company's revenue of €2.5 million euros by delivering internal projects and shadowing lead developers on large projects",
     ],
     company: 'redWEB ApS | Ho Chi Minh City, Vietnam',
-  },
-  {
-    id: uuidv4(),
-    order: 5,
-    title: 'WORDPRESS DEVELOPER - SELF-EMPLOYED',
-    dates: 'Mar 2018 - Feb 2020 ',
-    duties: [
-      'Developed a ecommerce wordpress website by utilized a power of WooCommerce pluggin',
-      'Created several content materials for the website by benchmarking from the top 10 e-commerce platforms in Asia to generate monthly sales for the company.',
-      'Managed paid and organic marketing on Google and Facebook using their advertising platforms on a total budget of 5 million VND.',
-    ],
-    company: 'Outdoorthrillz | Online',
-  },
-  {
-    id: uuidv4(),
-    order: 6,
-    title: 'WEB DEVELOPER - Fulltime',
-    dates: 'February 2019 - August 2019',
-    duties: [
-      'Developed a website with WordPress for an e-commerce company consisting of five primary members focusing on the sales of smartphones and accessories leading to a monthly revenue of 135 million Vietnamese Dong (VND).',
-      'Created several content materials for the website by benchmarking from the top 10 e-commerce platforms in Asia to generate monthly sales for the company.',
-      'Managed paid and organic marketing on Google and Facebook using their advertising platforms on a total budget of 5 million VND.',
-    ],
-    company: 'Thinh Vu Phu Kien | Ho Chi Minh City, Vietnam',
   },
 ];
